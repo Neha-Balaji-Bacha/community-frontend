@@ -55,7 +55,7 @@ function RegisterPage() {
 
         try {
             dispatch(setLoading(true));
-            const response = await axios.post(`${API_URL}/user/register`, {
+            const response = await axios.post(`${API_URL}/api/user/register`, {
                 name,
                 email,
                 password,

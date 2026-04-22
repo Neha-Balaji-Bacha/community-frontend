@@ -52,7 +52,7 @@ function CreateCommunityPage() {
             dispatch(setLoading(true));
 
             const response = await axios.post(
-                `${API_URL}/community/create`,
+                `${API_URL}/api/community/create`,
                 { name, description, category },
                 { withCredentials: true }
             );

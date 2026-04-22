@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import styles, { categoryStyles } from "../css/memberDashBoard.js";
 import { setExistingDetails, leaveCommunity } from "../store/slices/communitySlice";
 import { setExistingEventsDetails } from "../store/slices/eventSlice";
-import { makeHost } from "../store/slices/authSlice"; 
+import { makeHost } from "../store/slices/authSlice";
 import { API_URL } from "../config";
 
 function MemberDashboardPage() {
@@ -29,7 +29,7 @@ function MemberDashboardPage() {
 
     async function fetchDashboard() {
       try {
-        const res = await axios.get(`${API_URL}/user/dashboard`, {
+        const res = await axios.get(`${API_URL}/api/user/dashboard`, {
           withCredentials: true,
         });
 
@@ -57,7 +57,7 @@ function MemberDashboardPage() {
   async function handleLeaveCommunity(id) {
     try {
       const res = await axios.patch(
-        `${API_URL}/user/leave-community/${id}`,
+        `${API_URL}/api/user/leave-community/${id}`,
         {},
         { withCredentials: true }
       );
@@ -76,7 +76,7 @@ function MemberDashboardPage() {
   async function handleMakeHost() {
     try {
       const res = await axios.patch(
-        `${API_URL}/user/make-host`,
+        `${API_URL}/api/user/make-host`,
         {},
         { withCredentials: true }
       );
@@ -146,9 +146,8 @@ function MemberDashboardPage() {
 
                   <div>
                     <span
-                      className={`${styles.categoryBadge} ${
-                        categoryStyles[c.category?.trim().toLowerCase()] || ""
-                      }`}
+                      className={`${styles.categoryBadge} ${categoryStyles[c.category?.trim().toLowerCase()] || ""
+                        }`}
                     >
                       {c.category?.toUpperCase() || "GENERAL"}
                     </span>
@@ -163,7 +162,7 @@ function MemberDashboardPage() {
           )}
         </section>
 
-        
+
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>My RSVPs</h2>
 

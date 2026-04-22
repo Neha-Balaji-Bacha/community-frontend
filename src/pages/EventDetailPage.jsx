@@ -32,7 +32,7 @@ function EventDetailPage() {
         async function fetchEvent() {
             try {
                 const response = await axios.get(
-                    `${API_URL}/event/specific?id=${id}`,
+                    `${API_URL}/api/event/specific?id=${id}`,
                     { withCredentials: true }
                 );
 
@@ -58,7 +58,7 @@ function EventDetailPage() {
 
         try {
             const response = await axios.patch(
-                `${API_URL}/user/toggleRSVP/${id}`,
+                `${API_URL}/api/user/toggleRSVP/${id}`,
                 {},
                 { withCredentials: true }
             );
@@ -85,7 +85,7 @@ function EventDetailPage() {
 
         try {
             const response = await axios.delete(
-                `${API_URL}/event/${id}`,
+                `${API_URL}/api/event/${id}`,
                 { withCredentials: true }
             );
 

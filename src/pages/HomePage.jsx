@@ -19,7 +19,7 @@ function HomePage() {
         <div className={styles.left}>
 
           <div className={styles.tag}>
-            🚀 Community Platform
+            Community Platform
           </div>
 
           <h1 className={styles.heading}>

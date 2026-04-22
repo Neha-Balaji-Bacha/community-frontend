@@ -18,7 +18,7 @@ function EventsPage() {
     useEffect(() => {
         async function fetchEvents() {
             try {
-                const response = await axios.get(`${API_URL}/event/all`);
+                const response = await axios.get(`${API_URL}/api/event/all`);
                 dispatch(setAllEvents(response.data.data.events || []));
             } catch (error) {
                 console.log(error);
@@ -30,7 +30,7 @@ function EventsPage() {
 
     async function handleSearch() {
         try {
-            const response = await axios.get(`${API_URL}/event/all`, {
+            const response = await axios.get(`${API_URL}/api/event/all`, {
                 params: { city, keyword },
             });
 
@@ -57,7 +57,7 @@ function EventsPage() {
             <div className={styles.header}>
                 <div>
                     <h1 className={styles.title}>
-                        🔍 Discover <span className={styles.highlight}>Events</span>
+                        Discover <span className={styles.highlight}>Events</span>
                     </h1>
                     <p className={styles.subtitle}>
                         Find events happening around you

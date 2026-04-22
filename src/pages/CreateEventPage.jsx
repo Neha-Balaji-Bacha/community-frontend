@@ -61,7 +61,7 @@ function CreateEventPage() {
             dispatch(setLoading(true));
 
             const response = await axios.post(
-                `${API_URL}/event/create`,
+                `${API_URL}/api/event/create`,
                 {
                     name,
                     description,

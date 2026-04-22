@@ -47,7 +47,7 @@ function LoginPage() {
         try {
             dispatch(setLoading(true));
             const res = await axios.post(
-                `${API_URL}/user/login`,
+                `${API_URL}/api/user/login`,
                 { email, password },
                 { withCredentials: true }
             );

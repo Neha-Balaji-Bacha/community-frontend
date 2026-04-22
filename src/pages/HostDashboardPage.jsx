@@ -33,7 +33,7 @@ function HostDashboardPage() {
         async function fetchDashboard() {
             try {
                 const res = await axios.get(
-                    `${API_URL}/user/host/dashboard`,
+                    `${API_URL}/api/user/host/dashboard`,
                     { withCredentials: true }
                 );
 
@@ -62,7 +62,7 @@ function HostDashboardPage() {
 
     const handleDelete = async (communityId) => {
         const res = await axios.delete(
-            `${API_URL}/community/${communityId}`,
+            `${API_URL}/api/community/${communityId}`,
             { withCredentials: true }
         );
 
@@ -74,7 +74,7 @@ function HostDashboardPage() {
 
     const handleLeave = async (communityId) => {
         const res = await axios.patch(
-            `${API_URL}/user/leave-community/${communityId}`,
+            `${API_URL}/api/user/leave-community/${communityId}`,
             {},
             { withCredentials: true }
         );
@@ -85,7 +85,7 @@ function HostDashboardPage() {
     };
     const handleDeleteEvent = async (eventId) => {
         const res = await axios.delete(
-            `${API_URL}/event/${eventId}`,
+            `${API_URL}/api/event/${eventId}`,
             { withCredentials: true }
         );
 

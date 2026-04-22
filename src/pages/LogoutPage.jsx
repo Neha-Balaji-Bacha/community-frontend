@@ -13,7 +13,7 @@ function LogoutPage() {
         async function handleLogout() {
             try {
                 await axios.post(
-                    `${API_URL}/user/logout`,
+                    `${API_URL}/api/user/logout`,
                     {},
                     { withCredentials: true }
                 );

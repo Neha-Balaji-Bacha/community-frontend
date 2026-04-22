@@ -27,7 +27,7 @@ function CommunityDetailPage() {
         async function fetchSpecificCommunity() {
             try {
                 const response = await axios.get(
-                    `${API_URL}/community/specific?id=${id}`,
+                    `${API_URL}/api/community/specific?id=${id}`,
                     { withCredentials: true }
                 );
 
@@ -56,7 +56,7 @@ function CommunityDetailPage() {
         }
         try {
             const response = await axios.patch(
-                `${API_URL}/user/join-community?communityId=${id}`,
+                `${API_URL}/api/user/join-community?communityId=${id}`,
                 {},
                 { withCredentials: true }
             );
@@ -85,7 +85,7 @@ function CommunityDetailPage() {
     async function handleLeaveCommunity() {
         try {
             const response = await axios.patch(
-                `${API_URL}/user/leave-community/${id}`,
+                `${API_URL}/api/user/leave-community/${id}`,
                 {},
                 { withCredentials: true }
             );
@@ -110,7 +110,7 @@ function CommunityDetailPage() {
     async function handleDeleteCommunity() {
         try {
             const response = await axios.delete(
-                `${API_URL}/community/${id}`,
+                `${API_URL}/api/community/${id}`,
                 { withCredentials: true }
             );
 

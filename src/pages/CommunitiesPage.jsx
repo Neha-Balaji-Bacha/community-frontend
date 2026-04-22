@@ -18,7 +18,7 @@ function CommunitiesPage() {
         async function fetchCommunities() {
             try {
                 const response = await axios.get(
-                    `${API_URL}/community/all`
+                    `${API_URL}/api/community/all`
                 );
 
                 dispatch(
@@ -37,7 +37,7 @@ function CommunitiesPage() {
             <div className={styles.header}>
                 <div>
                     <h1 className={styles.title}>
-                        🌍 Discover{" "}
+                        Discover{" "}
                         <span className={styles.titleHighlight}>
                             Communities
                         </span>

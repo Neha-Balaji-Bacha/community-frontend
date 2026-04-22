@@ -26,7 +26,7 @@ function ProfilePage() {
 
   async function upgradeToHost() {
     try {
-      await axios.patch(`${API_URL}/user/make-host`, {}, { withCredentials: true });
+      await axios.patch(`${API_URL}/api/user/make-host`, {}, { withCredentials: true });
       dispatch(makeHost());
     } catch (err) {
       console.log(err);
@@ -45,7 +45,7 @@ function ProfilePage() {
       formData.append("profilePic", file);
 
       const res = await axios.patch(
-        `${API_URL}/user/upload-profile-pic`,
+        `${API_URL}/api/user/upload-profile-pic`,
         formData,
         {
           withCredentials: true,
