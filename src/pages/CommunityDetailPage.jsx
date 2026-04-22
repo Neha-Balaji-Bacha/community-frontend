@@ -56,7 +56,7 @@ function CommunityDetailPage() {
         }
         try {
             const response = await axios.patch(
-                `${API_URL}/user/join-community?communityId=${id}`,
+                `${API_URL}/user/join-community/${id}`,
                 {},
                 { withCredentials: true }
             );
@@ -66,7 +66,7 @@ function CommunityDetailPage() {
                 return;
             }
             //Update join community list : redux
-            dispatch(joinCommunity(specificCommunity));
+            dispatch(joinCommunity(response.data.data.community));
 
 
             //Update specific community : redux

@@ -22,7 +22,7 @@ function EventDetailPage() {
 
     const [generalError, setGeneralError] = useState("");
 
-    const isJoined = rsvpedEvents?.some(
+    const isJoined = (rsvpedEvents || []).some(
         (e) => e._id.toString() === id
     );
 
