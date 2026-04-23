@@ -1,6 +1,6 @@
 const styles = {
   container:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-10",
+    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-10 sm:pt-30",
 
   card:
     "max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-3xl shadow-xl p-8 border border-gray-200",

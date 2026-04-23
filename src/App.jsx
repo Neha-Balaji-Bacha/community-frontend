@@ -90,7 +90,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="select-none">
       <Navbar />
 
       <Routes>

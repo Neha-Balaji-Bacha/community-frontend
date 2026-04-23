@@ -30,9 +30,12 @@ function Navbar() {
                             Events
                         </NavLink>
 
-                        {user && (<NavLink to="/dashboard" className={({ isActive }) => styles.navLink(isActive)}>
+                        {user && <NavLink
+                            to={user?.role === "host" ? "/host/dashboard" : "/dashboard"}
+                            className={({ isActive }) => styles.navLink(isActive)}
+                        >
                             Dashboard
-                        </NavLink>)}
+                        </NavLink>}
 
                         {user && (
                             <NavLink to="/profile" className={({ isActive }) => styles.navLink(isActive)}>

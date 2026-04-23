@@ -36,7 +36,7 @@ function CommunitiesPage() {
         <div className={styles.page}>
             <div className={styles.header}>
                 <div>
-                    <h1 className={styles.title}>
+                    <h1 className={`${styles.title} select-none`}>
                         Discover{" "}
                         <span className={styles.titleHighlight}>
                             Communities
@@ -80,19 +80,19 @@ function CommunitiesPage() {
 
                         <div className={styles.stats}>
                             <div className={styles.statItem}>
-                                <span>📅</span>
+                                <span className="font-bold">Events : </span>
                                 <span className={styles.statNumber}>
                                     {community.eventsCount || 0}
                                 </span>
-                                <span>events</span>
+                                {/* <span>events</span> */}
                             </div>
 
                             <div className={styles.statItem}>
-                                <span>👥</span>
+                                <span className="font-bold">Members : </span>
                                 <span className={styles.statNumber}>
                                     {community.members?.length || 0}
                                 </span>
-                                <span>members</span>
+                                {/* <span>members</span> */}
                             </div>
                         </div>
 

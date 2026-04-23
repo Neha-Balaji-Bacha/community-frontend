@@ -1,22 +1,18 @@
 export const styles = {
   page:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-6",
+    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-6 sm:pt-24",
 
   header:
-    "max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10 mt-10",
+    "max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10 mt-10 cursor-pointer",
 
-  // ✅ SAME as before (no change)
-  title:
-    "text-3xl md:text-4xl font-bold text-gray-900 leading-tight",
-
+ title:
+  "text-3xl md:text-4xl font-bold text-gray-900 leading-tight select-none",
   titleHighlight:
     "text-emerald-600",
 
-  // ⬆ Slightly bigger
   subtitle:
-    "text-base text-gray-500 mt-2 max-w-md",
+    "text-base text-gray-500 mt-2 max-w-md select-none",
 
-  // ⬆ Slightly bigger
   button:
     "px-6 py-3 text-base bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition shadow-sm",
 
@@ -26,19 +22,15 @@ export const styles = {
   card:
     "bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-emerald-200 hover:bg-white/90 transition-all duration-300 cursor-pointer flex flex-col gap-3 group",
 
-  // ⬆ Slightly bigger
   categoryBadge:
     "inline-flex items-center px-3 py-1 text-xs tracking-wide font-semibold rounded-full w-fit",
 
-  // ⬆ Increased
   titleCard:
     "text-xl font-semibold text-gray-900 leading-snug group-hover:text-emerald-600 transition mt-1",
 
-  // ⬆ Increased
   description:
     "text-base text-gray-500 mt-1 line-clamp-2",
 
-  // ⬆ Increased
   stats:
     "flex gap-6 mt-3 text-sm text-gray-500",
 

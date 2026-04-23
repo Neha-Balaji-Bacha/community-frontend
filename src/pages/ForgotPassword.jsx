@@ -148,7 +148,6 @@ function ForgotPassword() {
                   Enter your new password
                 </p>
 
-                {/* 🔥 noValidate added */}
                 <form
                   onSubmit={handleReset}
                   className={styles.form}

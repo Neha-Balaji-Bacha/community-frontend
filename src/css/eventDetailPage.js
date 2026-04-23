@@ -1,7 +1,7 @@
 const styles = {
   // Page
   page:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 py-20 px-4",
+    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 py-20 px-4 sm:pt-28",
 
   container:
     "max-w-4xl mx-auto",

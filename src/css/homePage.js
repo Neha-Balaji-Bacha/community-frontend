@@ -1,6 +1,6 @@
 const styles = {
 container: `
-  w-full min-h-[90vh] flex items-center pt-10 pb-16 relative overflow-hidden
+  w-full min-h-screen flex items-center pt-24 sm:pt-28 pb-16 relative overflow-hidden
   bg-gradient-to-br from-white via-gray-50 to-emerald-100
 `,
 
@@ -9,13 +9,10 @@ container: `
     bg-emerald-300 opacity-20 blur-3xl rounded-full
   `,
 
-  // 🔥 clean layout
   inner: `
     w-full max-w-7xl mx-auto px-6 lg:px-12 
     grid lg:grid-cols-2 gap-16 items-center
   `,
-
-  // 🔥 slightly tighter for balance
   left: `
     space-y-6 max-w-md mx-auto lg:mx-0 text-center lg:text-left
   `,
@@ -25,7 +22,6 @@ container: `
     bg-emerald-50 text-emerald-600 rounded-full font-semibold
   `,
 
-  // 🔥 refined typography
   heading: `
     text-[38px] sm:text-[46px] lg:text-[54px] 
     leading-tight font-bold tracking-tight text-gray-900
@@ -61,7 +57,6 @@ container: `
     hover:bg-gray-100 transition
   `,
 
-  // 🔥 CLEAN CARD (less padding + softer look)
   rightCard: `
     w-full 
     bg-white/70 backdrop-blur-md p-3 rounded-2xl
@@ -70,7 +65,6 @@ container: `
     transition duration-300 hover:-translate-y-2 hover:shadow-xl
   `,
 
-  // 🔥 PERFECT IMAGE SCALE
   image: `
     w-full max-w-[820px] lg:max-w-[950px]
     h-auto object-contain mx-auto

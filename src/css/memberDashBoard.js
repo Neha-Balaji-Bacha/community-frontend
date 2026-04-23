@@ -1,29 +1,23 @@
 const styles = {
-  container:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 py-12",
-
+ container:
+  "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 pt-20 sm:pt-28 pb-12",
   inner:
     "max-w-7xl mx-auto px-6 space-y-12",
 
   header:
     "flex flex-col md:flex-row md:items-center md:justify-between gap-6",
 
-  // ✅ KEEP SAME
   title:
     "text-3xl font-bold text-gray-900 tracking-tight",
 
-  // ⬆ slightly bigger
   badge:
     "inline-block mt-2 px-3 py-1 bg-emerald-100 text-emerald-600 rounded-full text-sm font-semibold",
 
-  // ⬆ improved
   hostBtn:
     "px-6 py-3 text-base bg-emerald-500 text-white rounded-lg shadow-sm hover:bg-emerald-600 hover:shadow-md transition-all duration-200",
 
   section:
     "bg-white/80 backdrop-blur-lg rounded-2xl p-6 shadow-md border border-gray-200",
-
-  // ⬆ increased
   sectionTitle:
     "text-xl font-semibold text-gray-800 mb-5",
 
@@ -36,30 +30,24 @@ const styles = {
   communityRow:
     "flex items-center justify-between",
 
-  // ⬆ slightly bigger
   linkBlue:
     "text-lg font-semibold text-emerald-600 hover:text-emerald-700 transition",
 
   linkGreen:
     "text-lg font-semibold text-emerald-600 hover:text-emerald-700 transition",
 
-  // ⬆ increased
   textSmall:
     "text-base text-gray-600 mt-1",
 
-  // ⬆ increased
   textMuted:
     "text-sm text-gray-500 mt-2",
 
-  // ⬆ slightly bigger
   emptyText:
     "text-gray-400 text-base text-center py-6 italic",
 
-  // ⬆ improved
   leaveBtn:
     "text-sm px-3 py-1.5 border border-gray-300 rounded-md hover:bg-red-50 hover:text-red-600 transition-all duration-200",
 
-  // ⬆ slightly bigger
   categoryBadge:
     "inline-block mt-3 px-3 py-1 text-sm font-semibold rounded-full tracking-wide",
 };

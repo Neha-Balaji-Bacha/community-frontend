@@ -56,10 +56,10 @@ function EventsPage() {
             {/* Header */}
             <div className={styles.header}>
                 <div>
-                    <h1 className={styles.title}>
+                    <h1 className={`${styles.title} select-none`}>
                         Discover <span className={styles.highlight}>Events</span>
                     </h1>
-                    <p className={styles.subtitle}>
+                    <p className={`{${styles.subtitle} select-none}`}>
                         Find events happening around you
                     </p>
                 </div>
@@ -106,8 +106,8 @@ function EventsPage() {
                             <h2 className={styles.titleCard}>{event.name}</h2>
 
                             <div className={styles.meta}>
-                                <span>📍 {event.city}</span>
-                                <span>🏢 {event.venue}</span>
+                                <span> <span className="font-bold">City : </span> {event.city}</span>
+                                <span> <span className="font-bold"> Venue : </span>{event.venue}</span>
                             </div>
 
                             <p className={styles.description}>
@@ -115,10 +115,9 @@ function EventsPage() {
                             </p>
 
                             <p className={styles.time}>
-                                🕒 {formatDate(event.time)}
+                                <span className="font-bold">Time & Date : </span> {formatDate(event.time)}
                             </p>
 
-                            {/* ✅ CLEAN CTA */}
                             <div className={styles.footer}>
                                 <span className={styles.footerText}>
                                     View Event
