@@ -18,7 +18,8 @@ input:
 searchBtn:
   "w-full md:w-auto px-6 py-3 text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
  createBtn:
-  "w-full md:w-auto px-5 py-2.5 text-sm md:text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
+    "px-6 py-3 text-base bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition shadow-sm",
+
   grid:
     "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto",
 
