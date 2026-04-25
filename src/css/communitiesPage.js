@@ -1,12 +1,10 @@
 export const styles = {
-  page:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-6 sm:pt-24",
-
-  header:
-    "max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10 mt-10 cursor-pointer",
-
- title:
-  "text-3xl md:text-4xl font-bold text-gray-900 leading-tight select-none",
+page:
+  "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-4 sm:px-6 pt-20 pb-6 sm:pt-24",
+ header:
+  "max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 md:mb-10 mt-2 md:mt-4",
+title:
+  "text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight select-none",
   titleHighlight:
     "text-emerald-600",
 
@@ -16,6 +14,19 @@ export const styles = {
   button:
     "px-6 py-3 text-base bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition shadow-sm",
 
+  // 🔍 SEARCH
+  searchWrapper:
+    "max-w-7xl mx-auto mb-10 flex flex-col md:flex-row gap-4",
+
+  input:
+    "w-full md:flex-1 px-4 py-3 text-base border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-emerald-400",
+
+  select:
+    "w-full md:w-auto px-4 py-3 text-base border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-emerald-400",
+
+  searchBtn:
+    "w-full md:w-auto px-6 py-3 text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
+
   grid:
     "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto",
 
@@ -23,7 +34,7 @@ export const styles = {
     "bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-emerald-200 hover:bg-white/90 transition-all duration-300 cursor-pointer flex flex-col gap-3 group",
 
   categoryBadge:
-    "inline-flex items-center px-3 py-1 text-xs tracking-wide font-semibold rounded-full w-fit",
+    "inline-flex items-center px-3 py-1 text-xs tracking-wide font-semibold rounded-full w-fit transition-colors duration-200",
 
   titleCard:
     "text-xl font-semibold text-gray-900 leading-snug group-hover:text-emerald-600 transition mt-1",
@@ -43,7 +54,6 @@ export const styles = {
   footer:
     "flex justify-between items-center mt-5 pt-3 border-t border-gray-100",
 
-  // ⬆ Increased
   footerText:
     "text-base text-emerald-600 font-medium group-hover:text-emerald-700 transition",
 
@@ -58,4 +68,6 @@ export const categoryStyles = {
   tech: "bg-gray-200 text-gray-700",
   jobs: "bg-green-100 text-green-600",
   sports: "bg-red-100 text-red-600",
+
+  default: "bg-gray-100 text-gray-600",
 };

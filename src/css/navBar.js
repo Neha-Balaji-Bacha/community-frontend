@@ -10,12 +10,12 @@ navContainer: `
     rounded-2xl shadow-sm relative
   `,
 
-  logoWrapper: `
-    flex items-center gap-2
-  `,
+ logoWrapper: `
+  flex items-center gap-2 focus:outline-none
+`,
 
   logoText: `
-    text-xl sm:text-2xl font-semibold text-gray-800
+    text-xl sm:text-2xl font-semibold text-gray-800 select-none
   `,
 
   leftSection: `

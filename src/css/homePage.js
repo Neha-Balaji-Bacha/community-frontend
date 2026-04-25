@@ -1,8 +1,8 @@
-const styles = {
-container: `
-  w-full min-h-screen flex items-center pt-24 sm:pt-28 pb-16 relative overflow-hidden
-  bg-gradient-to-br from-white via-gray-50 to-emerald-100
-`,
+export const styles = {
+  container: `
+    w-full min-h-screen flex items-center pt-24 sm:pt-28 pb-16 relative overflow-hidden
+    bg-gradient-to-br from-white via-gray-50 to-emerald-100
+  `,
 
   glow: `
     absolute top-[-100px] right-[-100px] w-[500px] h-[500px] 
@@ -13,6 +13,7 @@ container: `
     w-full max-w-7xl mx-auto px-6 lg:px-12 
     grid lg:grid-cols-2 gap-16 items-center
   `,
+
   left: `
     space-y-6 max-w-md mx-auto lg:mx-0 text-center lg:text-left
   `,
@@ -24,8 +25,11 @@ container: `
 
   heading: `
     text-[38px] sm:text-[46px] lg:text-[54px] 
-    leading-tight font-bold tracking-tight text-gray-900
+    leading-tight font-bold tracking-tight
   `,
+
+  headingPrimary: "text-gray-900",
+  headingHighlight: "text-emerald-500",
 
   description: `
     text-gray-500 text-[17px] leading-relaxed max-w-md
@@ -45,16 +49,38 @@ container: `
     text-sm font-bold
   `,
 
-  buttonPrimary: `
-    px-8 py-3 text-base font-semibold 
-    bg-emerald-500 text-white rounded-lg 
-    hover:bg-emerald-600 transition shadow-md hover:shadow-lg
-  `,
+buttonGroup: `
+  flex gap-3 mt-5
+  justify-center lg:justify-start
+  items-center
+`,
+
+buttonPrimary: `
+  px-6 py-2.5 text-sm font-semibold 
+  bg-emerald-500 text-white rounded-lg
+  shadow-sm hover:shadow-md
+  hover:bg-emerald-600 hover:-translate-y-[1px]
+  transition-all duration-200
+`,
+
+buttonSecondary: `
+  px-6 py-2.5 text-sm font-semibold 
+  text-emerald-600 rounded-lg
+  border border-emerald-500
+  bg-white
+  hover:bg-emerald-50 hover:border-emerald-400
+  hover:-translate-y-[1px]
+  transition-all duration-200
+`,
 
   buttonOutline: `
     px-8 py-3 text-base font-medium 
     border border-gray-300 rounded-lg text-gray-700 
     hover:bg-gray-100 transition
+  `,
+
+  rightWrapper: `
+    flex-1 flex justify-center
   `,
 
   rightCard: `
@@ -71,5 +97,3 @@ container: `
     transition duration-500 hover:scale-105
   `,
 };
-
-export default styles;

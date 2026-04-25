@@ -16,7 +16,7 @@ function Navbar() {
             <div className={styles.navWrapper}>
 
                 <div className={styles.leftSection}>
-                    <Link to="/" className={styles.logoWrapper}>
+                    <Link to="/" className={`${styles.logoWrapper} focus:outline-none`}>
                         <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
                         <span className={styles.logoText}>MeetNest</span>
                     </Link>

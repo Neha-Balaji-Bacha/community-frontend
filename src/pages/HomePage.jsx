@@ -1,8 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import homePage from "../assets/homePage.png";
-import styles from "../css/homePage.js";
+import { styles } from "../css/homePage.js";
 
 function HomePage() {
   const user = useSelector((state) => state.auth.user);
@@ -10,12 +9,11 @@ function HomePage() {
   return (
     <div className={styles.container}>
 
-      {/* Glow effect */}
       <div className={styles.glow}></div>
 
       <div className={styles.inner}>
 
-        {/* LEFT SECTION */}
+        {/* LEFT */}
         <div className={styles.left}>
 
           <div className={styles.tag}>
@@ -23,9 +21,13 @@ function HomePage() {
           </div>
 
           <h1 className={styles.heading}>
-            <span className="text-gray-900">Connect People.</span>
+            <span className={styles.headingPrimary}>
+              Connect People.
+            </span>
             <br />
-            <span className="text-emerald-500">Create Moments.</span>
+            <span className={styles.headingHighlight}>
+              Create Moments.
+            </span>
           </h1>
 
           <p className={styles.description}>
@@ -49,7 +51,7 @@ function HomePage() {
 
           {/* BUTTONS */}
           {!user ? (
-            <div className="flex gap-4 pt-3 justify-center lg:justify-start">
+            <div className={styles.buttonGroup}>
               <Link to="/register" className={styles.buttonPrimary}>
                 Get Started
               </Link>
@@ -59,17 +61,21 @@ function HomePage() {
               </Link>
             </div>
           ) : (
-            <div className="pt-3">
+            <div className={styles.buttonGroup}>
               <Link to="/events" className={styles.buttonPrimary}>
                 Explore Events
+              </Link>
+
+              <Link to="/communities" className={styles.buttonSecondary}>
+                Join Communities
               </Link>
             </div>
           )}
 
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="flex-1 flex justify-center">
+        {/* RIGHT */}
+        <div className={styles.rightWrapper}>
           <div className={styles.rightCard}>
             <img
               src={homePage}

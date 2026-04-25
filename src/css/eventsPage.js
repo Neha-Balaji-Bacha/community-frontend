@@ -1,30 +1,24 @@
 const styles = {
-  container:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-6 sm:pt-24",
-
-  header:
-    "max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10 mt-10",
-
+container:
+  "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-4 sm:px-6 pt-24 pb-6",
+ header:
+  "max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8 mt-2",
 title:
-  "text-3xl md:text-4xl font-bold text-gray-900 leading-tight select-none",
+  "text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight select-none",
   highlight:
     "text-emerald-600",
 
   subtitle:
     "text-base text-gray-500 mt-2 select-none",
 
-  searchWrapper:
-    "max-w-7xl mx-auto mb-10 flex flex-col md:flex-row items-center gap-4",
-
-  input:
-    "flex-1 w-full px-4 py-3 text-base border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-emerald-400",
-
-  searchBtn:
-    "px-6 py-3 text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
-
-  createBtn:
-    "px-6 py-3 text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
-
+ searchWrapper:
+  "max-w-7xl mx-auto mb-10 flex flex-col md:flex-row gap-4",
+input:
+  "w-full md:flex-1 px-4 py-3 text-base border border-gray-300 rounded-xl bg-white focus:outline-none focus:ring-2 focus:ring-emerald-400",
+searchBtn:
+  "w-full md:w-auto px-6 py-3 text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
+ createBtn:
+  "w-full md:w-auto px-5 py-2.5 text-sm md:text-base bg-emerald-500 text-white font-medium rounded-xl hover:bg-emerald-600 transition",
   grid:
     "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto",
 

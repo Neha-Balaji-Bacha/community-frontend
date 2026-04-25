@@ -14,6 +14,7 @@ function EventsPage() {
     const [keyword, setKeyword] = useState("");
 
     const events = useSelector((state) => state.event.allEvents);
+    const user = useSelector((state) => state.auth.user);
 
     useEffect(() => {
         async function fetchEvents() {
@@ -59,14 +60,16 @@ function EventsPage() {
                     <h1 className={`${styles.title} select-none`}>
                         Discover <span className={styles.highlight}>Events</span>
                     </h1>
-                    <p className={`{${styles.subtitle} select-none}`}>
+                    <p className={`${styles.subtitle} select-none`}>
                         Find events happening around you
                     </p>
                 </div>
 
-                <Link to="/events/create" className={styles.createBtn}>
-                    + Create Event
-                </Link>
+                {user?.role === "host" && (
+                    <Link to="/events/create" className={styles.createBtn}>
+                        + Create Event
+                    </Link>
+                )}
             </div>
 
             {/* Search */}

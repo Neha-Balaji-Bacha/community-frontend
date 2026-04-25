@@ -1,10 +1,8 @@
 const styles = {
   container:
-    "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-6 py-10 sm:pt-30",
-
-  card:
-    "max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-3xl shadow-xl p-8 border border-gray-200",
-
+  "min-h-screen bg-gradient-to-br from-white via-gray-50 to-emerald-100 px-4 sm:px-6 pt-24 pb-6 sm:pt-28",
+card:
+  "max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-3xl shadow-xl p-5 sm:p-8 border border-gray-200",
   header:
     "flex flex-col items-center text-center gap-2 pb-6 border-b border-gray-200",
 
@@ -36,9 +34,8 @@ const styles = {
   bio:
     "text-base text-gray-600 mt-3 max-w-md",
 
-  statsContainer:
-    "grid grid-cols-2 gap-4 mt-6",
-
+ statsContainer:
+  "grid grid-cols-2 gap-3 sm:gap-4 mt-5 sm:mt-6",
   statCard:
     "bg-gradient-to-br from-gray-50 to-white rounded-xl p-5 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition",
 
