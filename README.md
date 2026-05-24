@@ -55,20 +55,16 @@ npm run dev
 VITE_API_URL=http://localhost:5000/api
 
 ➤ Deployment
-   Vercel
-   
+• Vercel
+
 ➤ Project Screenshots
 
 ● Desktop View
 
-![Desktop Home](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/ac04a647f59174dc76296a486612ce1b2693f4b9/Desktop-Home.png?raw=true)
+![Desktop Home](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/26cf9dbcec765ad5450eddf0c5961b1e9337fd18/desktop-home.png?raw=true)
 
-![Desktop Community](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/ac04a647f59174dc76296a486612ce1b2693f4b9/Desktop-Community.png?raw=true)
+![Desktop Community](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/26cf9dbcec765ad5450eddf0c5961b1e9337fd18/desktop-community.png?raw=true)
 
 ● Mobile View
 
-![Mobile Community](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/ac04a647f59174dc76296a486612ce1b2693f4b9/Mobile-Community.jpeg?raw=true)
-
-![Mobile Home](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/ac04a647f59174dc76296a486612ce1b2693f4b9/Mobile.Home.jpeg?raw=true)
-
-• Vercel
+![Mobile Community Home](https://github.com/Neha-Balaji-Bacha/community-frontend/blob/26cf9dbcec765ad5450eddf0c5961b1e9337fd18/mobile_home_community.jpeg?raw=true)
