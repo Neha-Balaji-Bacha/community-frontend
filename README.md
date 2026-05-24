@@ -1,16 +1,59 @@
-# React + Vite
+● Community Based Event Management System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+➤ Overview
 
-Currently, two official plugins are available:
+This is the frontend of the Community Based Event Management System developed using React.js. It provides a responsive and interactive UI for users to explore and manage events.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+➤ Features
 
-## React Compiler
+• User Registration and Login
+• JWT Authentication
+• Responsive Design
+• Search and Filter Events
+• Create and Manage Events
+• Protected Routes
+• User Profile Management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+➤ Tech Stack
 
-## Expanding the ESLint configuration
+• React.js
+• JavaScript
+• HTML5
+• CSS3
+• Axios
+• React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+➤ Folder Structure
+
+frontend/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── services/
+│   ├── assets/
+│   ├── App.js
+│   └── main.js
+│
+├── public/
+├── package.json
+└── README.md
+
+➤ Installation
+
+git clone <repository-url>
+
+cd frontend
+
+npm install
+
+npm run dev
+
+➤ Environment Variables
+
+VITE_API_URL=http://localhost:5000/api
+
+➤ Deployment
+
+• Vercel
